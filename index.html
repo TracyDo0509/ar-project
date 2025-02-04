@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Custom Image AR</title>
+    <title>Simple AR Demo</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
+    <!-- Tạo cảnh AR -->
     <a-scene embedded arjs>
-      <!-- Thêm marker từ hình ảnh tùy chọn -->
-      <a-marker type="pattern" url="https://github.com/TracyDo0509/ar-project/raw/refs/heads/main/pattern-pattern-1-51980f00-ab98-4554-80df-adedbfd9d147.patt">
-        <!-- Thêm mô hình 3D tải lên -->
-        <a-entity gltf-model="https://github.com/TracyDo0509/ar-project/raw/refs/heads/main/trong_ong_ong_son__dong_son_bronze_drum.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+      <!-- Thêm marker Hiro -->
+      <a-marker type="pattern" url="https://raw.githubusercontent.com/TracyDo0509/ar-projec t/refs/heads/main/pattern-1-51980f00-ab98-4554-80df-adedbfd9d147.patt">
+        <a-box position="0 0.5 0" material="color: blue;"></a-box>
       </a-marker>
-
-      <!-- Camera -->
+      
+      <!-- Camera để theo dõi -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
